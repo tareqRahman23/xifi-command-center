@@ -23,6 +23,7 @@
 		"npm": ">=10.0.0"
 	},
 	"devDependencies": {
+		"@emnapi/runtime": "^1.11.3",
 		"@eslint/js": "^10.0.1",
 		"@playwright/test": "^1.60.0",
 		"@sveltejs/adapter-node": "^5.5.4",
