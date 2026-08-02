@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+	<defs>
+		<linearGradient id="xifi" x1="3" y1="2" x2="29" y2="30" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#ec5bae" />
+			<stop offset="1" stop-color="#b82b80" />
+		</linearGradient>
+	</defs>
+	<rect width="32" height="32" rx="9" fill="url(#xifi)" />
+	<path d="m9 8 11 17M23 8c-6.5 7.2-9.2 11.1-12.4 17" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+</svg>

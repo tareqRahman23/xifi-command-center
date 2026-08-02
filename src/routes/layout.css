@@ -1,0 +1,78 @@
+@import 'tailwindcss';
+@import 'konsta/svelte/theme.css';
+
+@theme {
+	--color-brand-primary: #d83f9b;
+	--color-brand-blue: #2f63f5;
+	--color-brand-green: #17b26a;
+	--font-ios:
+		-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF UI Text', Inter, system-ui, sans-serif;
+}
+
+:root {
+	font-family: var(--font-ios);
+	font-synthesis: none;
+	color-scheme: light;
+	background: #f4f5fa;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	--xifi-navy: #101239;
+	--xifi-muted: #697089;
+	--xifi-line: #e7e8f1;
+	--xifi-surface: #ffffff;
+	--xifi-canvas: #f4f5fa;
+	--xifi-pink: #d83f9b;
+	--xifi-blue: #2f63f5;
+	--xifi-green: #17b26a;
+}
+
+html,
+body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100%;
+	background: var(--xifi-canvas);
+}
+
+body {
+	overflow: hidden;
+}
+
+button,
+input,
+select {
+	font: inherit;
+}
+
+button,
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
+*:focus-visible {
+	outline: 3px solid color-mix(in srgb, var(--xifi-blue) 38%, transparent);
+	outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+	width: 9px;
+	height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+	border: 2px solid transparent;
+	border-radius: 999px;
+	background: #c9ccdd;
+	background-clip: padding-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
